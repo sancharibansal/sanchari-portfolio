@@ -20,7 +20,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className= "w-9 h-9 object-contain" />
+          {/* <img src= {logo} alt="logo" className= "w-9 h-9 object-contain" /> */}
           <p className='text-white text-[18px] font-bold cursor-pointer flex'>
             Sanchari Bansal &nbsp; 
             <span className='sm:block hidden'> | Student </span>
@@ -37,7 +37,11 @@ const Navbar = () => {
               } hover:text-white text-[18px] font-medium cursor-pointer`} 
               onClick={() => setActive(link.title)}
             >
+              {link.url ? (
+                <a href={link.url} target="_blank" rel="noopener noreferrer">{link.title}</a>
+              ) : (
               <a href = {`#${link.id}`}>{link.title} </a>
+            )}
             </li>
           ))}
         </ul>

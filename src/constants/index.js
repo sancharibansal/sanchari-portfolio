@@ -17,12 +17,16 @@ import {
     docker,
     meta,
     starbucks,
-    tesla,
+    zummit,
+    //tesla,
     shopify,
     carrent,
+    tng,
+    mlproject,
     jobit,
     tripguide,
     threejs,
+    aipowered,
   } from "../assets";
   
   export const navLinks = [
@@ -37,6 +41,11 @@ import {
     {
       id: "contact",
       title: "Contact",
+    },
+    {
+      id: "resume",
+      title: "Resume",
+      url: "https://drive.google.com/file/d/1XTl5qCKd7JbNtLKrufoDlskLuYEQvgG6/view?usp=share_link"
     },
   ];
   
@@ -110,7 +119,7 @@ import {
     {
       title: "Junior Web Developer Intern",
       company_name: "Zummit Infolabs",
-      icon: starbucks,
+      icon: zummit,
       iconBg: "#383E56",
       date: "July 2023 - Nobvember 2023",
       points: [
@@ -195,7 +204,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
+      image: tng,
       source_code_link: "https://touchnglow4u.netlify.app",
     },
     {
@@ -216,7 +225,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
+      image: mlproject,
       source_code_link: "https://github.com/sancharibansal/house_price_prediction",
     },
     {
@@ -237,7 +246,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
+      image: aipowered,
       source_code_link: "https://www.youtube.com/watch?v=UyAxcA8Vxu4",
     },
   ];
